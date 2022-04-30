@@ -1,0 +1,435 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Secular One', sans-serif;
+    color: #F4EAE6;
+}
+
+#pageTitle {
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+#gameTitle {
+    font-size: 30px;
+
+}
+
+#gameSubtitle {
+    font-size: 20px;
+    font-family: "Lobster";
+}
+
+#text {
+
+    font-size: 20px;
+    font-family: 'Secular One';
+    text-align: left;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 30vh 80vh 8vh;
+}
+
+header {
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+    border-bottom: 1vh solid #145DA0;
+    box-shadow: 0 5px 10px -5px #000000;
+    z-index: 100;
+    /* font-family: 'Red Hat Display', sans-serif;*/
+}
+
+.header2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-weight: 600;
+
+}
+
+/*header*/
+.flexbox1 {
+    display: flex;
+    padding: 0 3vw 0 3vw !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 3vw;
+    margin-right: 3vw;
+    color: #145DA0;
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #145DA0BF;
+    opacity: 0.5;
+}
+
+
+.item {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.item a:hover {
+
+    text-underline-offset: 0.2em;
+    color: #145DA0BF !important;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+.contact a {
+    color: #145DA0;
+    font-size: 2.5vw;
+    margin: 0.4vh 0.4vh 0.4vh 0.4vh;
+
+}
+
+.contact a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header2 */
+.title {
+    margin-left: 2vw;
+    margin-top: 1vh;
+
+}
+
+
+
+
+/* Main */
+.mainBlock {
+    height: 65vh;
+    width: 90vw;
+    background-color: #2e8bc0;
+    border: #0C2d48 5px solid;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.imgInfos {
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+
+.name {
+    margin-top: 3vh;
+}
+
+.group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vh;
+    flex-wrap: wrap;
+}
+
+.ab {
+    font-weight: 500 !important;
+    background-color: #0C2d48;
+    width: 20vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px;
+
+}
+
+.ab:hover a {
+    color: #0C2d48;
+    text-decoration: none;
+}
+
+a {
+    color: #F4EAE6;
+}
+
+.ima {
+    width: 20vw;
+}
+
+.backgroundInfos {
+    margin-top: 8vh;
+    width: 80%;
+    height: 43vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    overflow-y: scroll;
+}
+
+.p {
+
+    text-align: left;
+
+}
+
+.af {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Footer */
+
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #145DA0;
+
+
+}
+
+.footer2 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+
+}
+
+.footer3 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+}
+
+
+.ab:hover {
+    background-color: #B1D4E0;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #text {
+
+        font-size: 17px;
+    }
+
+    .ima {
+        width: 20vw;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .item {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .contact a {
+        font-size: 3vw;
+    }
+
+    .contact a {
+
+        margin: 0.1vw;
+
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+    #gameTitle {
+        font-size: 35px;
+        font-family: "Secular One";
+    }
+
+    #pageTitle {
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .contain {
+        grid-template-rows: auto 20vh 100vh 8vh;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mainBlock {
+        margin: 3vh 3vw;
+        height: 80vh;
+        width: 90vw;
+        background-color: #2e8bc0;
+        border: #0C2d48 5px solid;
+        justify-content: center;
+        align-items: center;
+        overflow-y: unset;
+        overflow-x: hidden;
+    }
+
+    .ima {
+        width: 40vw;
+    }
+
+    .imgInfos {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text {
+        font-size: 18.5px;
+        font-family: 'Secular One';
+        text-align: left;
+    }
+
+    .group {
+        margin-bottom: 3vh;
+    }
+
+    .ab {
+        width: 180px;
+    }
+
+    .ju {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar-nav {
+        margin-left: 10%;
+        display: flex;
+        width: 130%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contact {
+        position: absolute;
+        top: 2.5vh;
+        right: 2vw;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .item {
+        font-size: 3vw;
+    }
+
+    .contact a {
+        font-size: 4vw;
+    }
+
+}

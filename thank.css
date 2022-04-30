@@ -1,0 +1,327 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+}
+
+
+.contain {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 30vh 72vh 8vh;
+}
+
+
+header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+    border-bottom: 1vh solid #145DA0;
+    box-shadow: 0 5px 10px -5px #000000;
+    z-index: 100;
+
+}
+
+
+.header2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-weight: 600;
+
+}
+
+/*header*/
+.flexbox1 {
+    display: flex;
+    padding: 0 3vw 0 3vw !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 3vw;
+    margin-right: 3vw;
+    color: #145DA0;
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #145DA0BF;
+    opacity: 0.5;
+}
+
+
+.item {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.item a:hover {
+
+    text-underline-offset: 0.2em;
+    color: #145DA0BF !important;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+.contact a {
+    color: #145DA0;
+    font-size: 2.5vw;
+    margin: 0.4vw;
+
+}
+
+.contact a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header2 */
+.title {
+    margin-left: 2vw;
+    margin-top: 1vh;
+    font-family: "Comic Sans MS";
+    font-weight: 900;
+}
+
+/* main */
+.main {
+    height: 60vh;
+    width: 80vw;
+    background-color: #145DA0;
+    border: #0C2d48 5px solid;
+    padding: 0vh 5vw;
+
+}
+
+main h1 {
+    margin: 5vh;
+    font-size: 2.8vw;
+}
+
+a button {
+    height: 7vh;
+    width: 46vh;
+    border: none;
+    background: #0C2d48;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1vh 2vw;
+
+}
+
+a button:hover {
+    background: #B1D4E0;
+    cursor: pointer;
+    color: #0C2d48;
+}
+
+/* Footer */
+
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #145DA0;
+
+
+}
+
+.footer2 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+
+}
+
+.footer3 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+}
+
+.af {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .item {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    main h1 {
+        margin: 5vh;
+        font-size: 3.3vw;
+    }
+
+
+    footer {
+        font-size: 14px;
+    }
+
+
+    .contact a {
+        font-size: 3vw;
+    }
+
+    .contact a {
+
+        margin: 0.1vw;
+
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .picture {
+        width: 10vh;
+    }
+
+    .title {
+        font-size: 5vh;
+    }
+
+
+
+    .contain {
+        grid-template-rows: auto 20vh 72vh 8vh;
+    }
+
+
+
+
+    main h1 {
+        margin: 4vh;
+        font-size: 25px;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar-nav {
+        margin-left: 10%;
+        display: flex;
+        width: 130%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contact {
+        position: absolute;
+        top: 2.5vh;
+        right: 2vw;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .item {
+        font-size: 3vw;
+    }
+
+    .contact a {
+        font-size: 4vw;
+    }
+
+
+}

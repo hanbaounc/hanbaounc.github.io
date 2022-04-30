@@ -1,0 +1,455 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Secular One', sans-serif;
+    color: #F4EAE6;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 30vh 80vh 8vh;
+}
+
+#pageTitle {
+    font-family: "Comic Sans MS";
+    font-weight: 900;
+}
+
+
+#text {
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: "Secular One";
+}
+
+
+
+header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+    border-bottom: 1vh solid #145DA0;
+    box-shadow: 0 5px 10px -5px #000000;
+    z-index: 100;
+
+}
+
+.header2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    text-align: left;
+    max-width: 95%;
+}
+
+footer {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-weight: 600;
+
+}
+
+/*header*/
+.flexbox1 {
+    display: flex;
+    padding: 0 3vw 0 3vw !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 3vw;
+    margin-right: 3vw;
+    color: #145DA0;
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #145DA0BF;
+    opacity: 0.5;
+}
+
+
+.item {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: black !important;
+   
+}
+
+.navbar-nav {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.item a:hover {
+
+    text-underline-offset: 0.2em;
+    color: #145DA0BF !important;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+.contact a {
+    color: #145DA0;
+    font-size: 2.5vw;
+    margin: 0.4vh 0.4vh 0.4vh 0.4vh;
+
+}
+
+.contact a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header2 */
+.title {
+    margin-left: 2vw;
+    margin-top: 1vh;
+
+}
+
+
+
+/* Main */
+.mainBlock {
+    height: 65vh;
+    width: 100vw;
+    background-color: #2e8bc0;
+    border: #0C2d48 5px solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vh;
+    flex-wrap: wrap;
+}
+
+.ab {
+    font-weight: 500 !important;
+    background-color: #0C2d48;
+    width: 20vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px;
+
+}
+
+a {
+    color: #F4EAE6;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.ima {
+    max-height: 6vh;
+    object-fit: contain;
+}
+
+.backgroundInfos {
+    width: 50vw;
+    height: 45vh;
+    overflow: scroll;
+    padding: 2vh;
+}
+
+/* Footer */
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #145DA0;
+
+
+}
+
+.footer2 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+
+}
+
+.footer3 {
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One';
+    color: white;
+}
+
+.ab:hover {
+    background-color: #B1D4E0;
+    cursor: pointer;
+    color: #0C2d48;
+
+}
+
+.ab:hover a {
+    text-decoration: none;
+}
+
+.af {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    #pageTitle {
+        font-family: "Comic Sans MS";
+        font-weight: bold;
+    }
+
+    #text {
+        font-size: 15pt;
+        font-weight: bold;
+        font-family: "Secular One";
+    }
+
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        padding-left: 4vw;
+    }
+
+    .ab {
+        margin-top: 3vh;
+        width: 20vw;
+        height: 6vh;
+
+    }
+
+    .imgInfos {
+        justify-content: center;
+        align-items: center;
+        padding-left: 4vw;
+    }
+
+    .name {
+        font-size: 2.5vw;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .mainBlock {
+        height: 66vh;
+        width: 90vw;
+        background-color: #2e8bc0;
+        border: #0C2d48 5px solid;
+        overflow: scroll;
+    }
+
+    .backgroundInfos {
+        width: 50vw;
+        height: 45vh;
+        overflow: scroll;
+        padding-left: 4vw;
+    }
+
+    .ab {
+        margin-top: 1.5vw;
+        width: 30vw;
+        height: 4vw;
+
+    }
+
+    .ima {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: fill;
+    }
+
+    .item {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    .contact a {
+        font-size: 3vw;
+    }
+    .contact a {
+        
+        margin: 0.1vw;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #pageTitle {
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    main {
+        flex-direction: column;
+
+    }
+
+    .mainBlock {
+        height: 58vh;
+        width: 90vw;
+        background-color: #2e8bc0;
+        border: #0C2d48 5px solid;
+    }
+
+
+    .contain {
+        grid-template-rows: auto 20vh 80vh 8vh;
+    }
+
+    .name {
+        font-size: 5vw;
+    }
+
+    .ima {
+        width: 50vw;
+    }
+
+    .ab {
+        margin-top: 2vw;
+        width: 60vw;
+        height: 6vh;
+
+    }
+
+    .backgroundInfos {
+        margin-left: 12vw;
+        width: 60vw;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar-nav {
+        margin-left: 10%;
+        display: flex;
+        width: 130%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contact {
+        position: absolute;
+        top: 2.5vh;
+        right: 2vw;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .item {
+        font-size: 3vw;
+    }
+
+    .contact a {
+        font-size: 4vw;
+    }
+}
